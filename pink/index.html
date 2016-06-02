@@ -5,17 +5,10 @@
 	</head>
 	<body>
 		<header class="header">
-			<section class="header__panel">
+			<nav class="header__panel">
 				<h1>PINK</h1>
-				<img src="gamb.jpg">
-			</section>
+			</nav>
 			<ul class="nav">
-				<li class="nav__item">
-					<section class="header__panel">
-						<h1>PINK</h1>
-						<img src="exit.jpg">
-					</section>
-				</li>
 				<li class="nav__item"><a class="nav__link">Главная</a></li>
 				<li class="nav__item"><a class="nav__link" href="photo.html">Фотографии</a></li>
 				<li class="nav__item"><a class="nav__link" href="form.html">Конкурс</a></li>
@@ -26,7 +19,9 @@
 			<h2>Взгляните на жизнь иначе!</h2>
 			<img src="logo.jpg">
 			<section class="app">
-				<button class="app__btn  btn" type="button">Скачать приложение</button>
+				<form name="store">
+					<button class="app__btn  btn" type="button">Скачать приложение</button>
+				</form>
 				<img class="app__logo  app__logo--apple" src="apple.jpg">
 				<img class="app__logo  app__logo--android" src="android.jpg">
 				<img class="app__logo  app__logo--win" src="win.jpg">
@@ -35,11 +30,11 @@
 			<section class="promo">
 				<h2>Устали от серости мегаполиса?</h2>
 				<h2>Нам есть, что вам предложить!</h2>
-				<b class="promo__title">Поднимает настроение</b>
+				<h3 class="promo__title">Поднимает настроение</h3>
 				<p class="promo__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-				<b class="promo__title">Меняет мир вокруг</b>
+				<h3 class="promo__title">Меняет мир вокруг</h3>
 				<p class="promo__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-				<b class="promo__title">Заводит новых друзей</b>
+				<h3 class="promo__title">Заводит новых друзей</h3>
 				<p class="promo__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
 				<img class="promo__logo" src="promo_logo.jpg">
 			</section>
@@ -82,20 +77,20 @@
 			</div>
 		</main>
 		<footer class="page-footer">
-			<p class="page-footer__title">Остались вопросы?</p>
-			<p class="page-footer__title">Свяжитесь с нами!</p>
-			<p class="page-footer__phone">
+			<h3 class="page-footer__title">Остались вопросы?</h3>
+			<h3 class="page-footer__title">Свяжитесь с нами!</h3>
+			<span class="page-footer__phone">
 				Звоните:
 				<a href="tel:+78125556666">+7 (812) 555-66-66</a>
-			</p>
-			<p class="page-footer__mail">
+			</span>
+			<span class="page-footer__mail">
 				Пишите:
 				<a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-			</p>
-			<p class="page-footer__adres">
+			</span>
+			<span class="page-footer__adres">
 				Приезжайте в гости:
 				<a href="maps:ll=59.938631, 30.323055">ул. Большая Конюшенная, 19/8</a>
-			</p>
+			</span>
 		</footer>
 	</body>
 </html>
