@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<header class="header">
+			<nav class="header__panel">
+				<h1><a href="index.html">PINK</a></h1>
+			</nav>
+			<ul class="nav">
+				<li class="nav__item"><a class="nav__link" href="index.html">Главная</a></li>
+				<li class="nav__item"><a class="nav__link" href="photo.html">Фотографии</a></li>
+				<li class="nav__item"><a class="nav__link" href="form.html">Конкурс</a></li>
+				<li class="nav__item"><a class="nav__link" href="https://htmlacademy.ru">HTML ACADEMY</a></li>
+			</ul>
+		</header>
+		<main class="page-main">
+			<h2>Конкурс на самое безбашеное путешествие с Пинк</h2>
+			<form class="main-form" method="post">
+				<h3 class="main-form__title">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</h3>
+				<div class="main-form__name">
+					<label for="surname">фамилия:</label>
+					<input type="text" id="surname" name="surname" required placeholder="Укажите фамилию">
+					<label for="name">имя:</label>
+					<input type="text" id="name" name="name" required placeholder="Введите ваше имя">
+					<label for="middle-name">отчество:-</label>
+					<input type="text" id="middle-name" name="middle-name" required placeholder="Ну и отчество тоже">
+				</div>
+				<div class="main-form__records">
+					<h3 class="main-form__records-title">ваши безбашенные достижения в путешествии</h3>
+					<input type="checkbox" id="shark" name="shark">
+					<label for="shark">Сделал селфи с акулой</label>
+					<input type="checkbox" id="burned" name="burned">
+					<label for="burned">Обгорел на пляже</label>
+					<input type="checkbox" id="chack" name="chack">
+					<label for="chack">Видел Чака Норриса</label>
+					<input type="checkbox" id="souvenir" name="souvenir">
+					<label for="souvenir">Накупил сувениров</label>
+					<input type="checkbox" id="tower" name="tower">
+					<label for="tower">Удержал башню</label>
+					<input type="checkbox" id="hotel" name="hotel">
+					<label for="hotel">Разгромил отель</label>
+				</div>
+				<div class="main-form__name">
+					<label for="phone">номерок телефончика</label>
+					<input type="tel" id="phone" name="phone" required placeholder="Номер, пожалуйста">
+					<label for="mail">Адресок почты</label>
+					<input type="email" id="mail" name="mail" required placeholder="E-mail, пожалуйста">
+				</div>
+				<div class="main-form__app">
+					<h3 class="main-form__app-title">С каким приложением путешествовали?</h3>
+						<input type="radio" name="app" value="ios" id="ios">
+						<label for="ios">Pink для iOS</label>
+						<input type="radio" name="app" value="android" id="android">
+						<label for="android">Pink для Android</label>
+						<input type="radio" name="app" value="windows" id="windows">
+						<label for="windows">Pink для Windows</label>
+				</div>
+				<div class="main-form__report">
+					<h3 class="main-form__report-title"></h3>
+					<textarea name"report" cols="30" rows="20" placeholder="Можно прям в красках, не стесняясь в выражения">
+					</textarea>
+				</div>
+				<button class="main-form__button  btn" type="button">Отправить форму
+				</button>
+				<p class="main-form__mark"><span>&#9913;</span>&#8212;обязательные поля</p>
+			</form>
+		</main>
+		<footer class="page-footer">
+			<a class="page-footer__link" href="index.html"><img class="page-footer__link-icon" src="ft-logo.jpg" alt="Pink"></a>
+			<ul class="social-list">
+				<li class="social-list__item">
+					<a class="social-list__link" href="Twitter.com"><img src="tw.jpg" alt="Twitter.com"></a>
+				</li>
+				<li class="social-list__item">
+					<a class="social-list__link" href="Facebook.com"><img src="fb.jpg" alt="Facebook.com"></a>
+				</li>
+				<li class="social-list__item">
+					<a class="social-list__link" href="youtube.com"><img src="youtube.jpg" alt="youtube.com"></a>
+				</li>
+			</ul>
+			<div class="page-footer__basement">
+				<span>Разработано</span>
+				<a href="htmlacadem.ru"><img src="htmlacademy.jpg" alt="HTML Academy"></a>
+			</div>
+		</footer>
+	</body>
+</html>
