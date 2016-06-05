@@ -6,7 +6,7 @@
 	<body>
 		<header class="header">
 			<nav class="header__panel">
-				<h1>PINK</h1>
+				<h1><a href="index.html">PINK</a></h1>
 			</nav>
 			<ul class="nav">
 				<li class="nav__item"><a class="nav__link" href="index.html">Главная</a></li>
@@ -50,15 +50,12 @@
 				</div>
 				<div class="main-form__app">
 					<h3 class="main-form__app-title">С каким приложением путешествовали?</h3>
-					<p>
-						<input type="radio" name="app" value="ios">Pink для iOS
-					</p>
-					<p>
-						<input type="radio" name="app" value="android">Pink для Android
-					</p>
-					<p>
-						<input type="radio" name="app" value="windows">Pink для Windows
-					</p>
+						<input type="radio" name="app" value="ios" id="ios">
+						<label for="ios">Pink для iOS</label>
+						<input type="radio" name="app" value="android" id="android">
+						<label for="android">Pink для Android</label>
+						<input type="radio" name="app" value="windows" id="windows">
+						<label for="windows">Pink для Windows</label>
 				</div>
 				<div class="main-form__report">
 					<h3 class="main-form__report-title"></h3>
@@ -71,7 +68,7 @@
 			</form>
 		</main>
 		<footer class="page-footer">
-			<img class="page-footer__logo" src="ft-logo.jpg" alt="Pink">
+			<a class="page-footer__link" href="index.html"><img class="page-footer__link-icon" src="ft-logo.jpg" alt="Pink"></a>
 			<ul class="social-list">
 				<li class="social-list__item">
 					<a class="social-list__link" href="Twitter.com"><img src="tw.jpg" alt="Twitter.com"></a>
