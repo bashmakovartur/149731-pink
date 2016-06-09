@@ -1,5 +1,29 @@
 .header {
-	background: url("/img/bg-back-mobile@1x.jpg");
+	.container();
+	
+	min-width: 320px;
+	min-height: 67px;
+	background-color: rgba(178, 178, 178, 0.3);
+	
+	h1 {
+		display: inline-block;
+		line-height: 29px;
+	}
+	
+	.header__panel {
+		padding: 0 20px;
+	}
+}
+
+.header__panel::after {
+	content: url(/img/icon-menu-burger.svg);
+	
 }
 
 
+@media screen and @tablet-width {
+	.header {
+//		.container();
+		background-color: red;
+	}
+}

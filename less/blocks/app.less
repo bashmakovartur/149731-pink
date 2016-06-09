@@ -1,4 +1,25 @@
 .app {
-	background: #1d2631;
-	padding: 15px 0 20px;
+	padding: 25px 20px 25px;
+	background-color: #1d2631;
+	
+	.app__btn {
+		display: block;
+		margin: 0 auto;
+	}
+	
+	.app__logo {
+		padding: 31px 0 10px;
+		
+		&--apple {
+			padding-left: 35px;
+		}
+	}
+	
+	.app__logo:not(:last-of-type) {
+		padding-right: 35px;
+	}
+	
+	.app__text {
+		text-align: center;
+	}
 }

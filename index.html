@@ -2,8 +2,10 @@
 <html>
 	<head>
   	<meta charset="utf-8">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no">
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 	<body>
 		<header class="header">
@@ -18,12 +20,12 @@
 			</ul>
 		</header>
 		<main class="page-main">
-			<h2>Взгляните на жизнь иначе!</h2>
+			<h2 class="page-main__title">Взгляните на жизнь иначе!</h2>
 			<section class="app">
-					<button class="app__btn  btn" type="button">Скачать приложение</button>
-				<img class="app__logo  app__logo--apple" src="apple.jpg">
-				<img class="app__logo  app__logo--android" src="android.jpg">
-				<img class="app__logo  app__logo--win" src="win.jpg">
+					<a class="app__link  btn" href="https://play.google.com">Скачать приложение</a>
+				<img class="app__logo  app__logo--apple" src="/img/logo-apple.svg">
+				<img class="app__logo  app__logo--android" src="/img/logo-android.svg">
+				<img class="app__logo  app__logo--win" src="/img/logo-microsoft.svg">
 				<p class="app__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
 			</section>
 			<section class="promo">
@@ -35,12 +37,9 @@
 				<p class="promo__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
 				<h3 class="promo__title">Заводит новых друзей</h3>
 				<p class="promo__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-				<img class="promo__logo" src="promo_logo.jpg">
+				<img class="promo__logo" src="/img/iphone-screen-mobile@1x.png" alt=":) Всем привет!">
 			</section>
 			<section class="opinion  slider">
-			 	<input class="slider__input" type="radio" name="opinion" id="opinion-input-1" checked>
-			  <input class="slider__input" type="radio" name="opinion" id="opinion-input-2">
-  		 	<input class="slider__input" type="radio" name="opinion" id="opinion-input-3">
 				<ul class="opinion__list">
 					<li class="opinion__item">
 						<h3 class="opinion__item-title">Николай Петров</h3>
@@ -55,6 +54,9 @@
 						<p class="opinion__item-text">&laquo;...&raquo;</p>
 					</li>
 			  </ul>
+				<input class="slider__input" type="radio" name="opinion" id="opinion-input-1" checked>
+			  <input class="slider__input" type="radio" name="opinion" id="opinion-input-2">
+  		 	<input class="slider__input" type="radio" name="opinion" id="opinion-input-3">
 				<div class="slider__toggles">
 					<label class="slider__toggels-item" for="opinion-input-1">1</label>
 					<label class="slider__toggels-item" for="opinion-input-2">2</label>
@@ -62,12 +64,12 @@
 				</div>
 			</section>
 			<section class="price  slider">
-				<input class="slider__input" type="radio" name="price" id="price-input-1">
-			  <input class="slider__input" type="radio" name="price" id="price-input-2" checked>
-  		 	<input class="slider__input" type="radio" name="price" id="price-input-3">
 				<img class="price__icon" src="price1.jpg">
 				<img class="price__icon" src="price2.jpg">
 				<img class="price__icon" src="price3.jpg">
+				<input class="slider__input" type="radio" name="price" id="price-input-1">
+			  <input class="slider__input" type="radio" name="price" id="price-input-2" checked>
+  		 	<input class="slider__input" type="radio" name="price" id="price-input-3">
 				<div class="slider__toggles">
 					<label class="slider__toggels-item" for="price-input-1">1</label>
 					<label class="slider__toggels-item" for="price-input-2">2</label>
