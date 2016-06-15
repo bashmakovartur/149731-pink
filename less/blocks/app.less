@@ -1,25 +1,61 @@
 .app {
 	padding: 25px 20px 25px;
 	background-color: #1d2631;
+	text-align: center;
 	
 	.app__link {
 		display: block;
 		margin: 0 auto;
+		padding: 15px 20px;
+		border: 3px solid white;
+		border-radius: 20px;
+		margin-bottom: 56px;
 	}
-	
-	.app__logo {
-		padding: 31px 0 10px;
+			
+	.app__logo--android {
+		margin: 0 35px;
+	}
 		
-		&--apple {
-			padding-left: 35px;
-		}
-	}
-	
-	.app__logo:not(:last-of-type) {
-		padding-right: 35px;
-	}
-	
 	.app__text {
-		text-align: center;
+		margin: 30px 0 35px;
 	}
 }
+
+@media screen and @tablet-width {
+	
+	.app {
+		width: 301px;
+		margin: 0 0 0 40px;
+		padding: 0 0 0 0;
+		
+		.app__link {
+			font-family: "Open Sans", Arial, sans-serif;
+			font-weight: bold;
+			font-size: 18px;
+			color: #ffffff;
+			text-decoration: none;
+		}
+		
+		.app__text {
+			font-family: 'Open Sans Light', 'Arial', sans-serif;
+			font-weight: lighter;
+			font-size: 17px;
+			line-height: 24px;
+			color: #ffffff;
+		}
+	}
+}
+
+@media screen and @desktop-width {
+	
+	.app {
+		width: 305px;
+		margin: 50px 0 0 130px;
+		
+		&__link {
+			margin-bottom: 70px;
+		}
+	}
+}
+
+

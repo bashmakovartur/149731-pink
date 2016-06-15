@@ -19,3 +19,20 @@
     width: 1200px;
   }
 }
+
+.container-fluid () {
+  width: auto;
+
+  @media @tablet-width {
+    width: 100%;
+		max-width: 950px;
+    margin: 0 auto;
+  }
+	
+	@media @desktop-width {
+		width: 100%;
+    min-width: 1200px;
+		margin: 0 auto;
+  }
+	
+}

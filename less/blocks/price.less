@@ -1,14 +1,33 @@
-.price{
+.price {
 	text-align: center;
-//	padding: 30px 0;
+	background-color: cadetblue;
 	
-	&__icon {
+	.price__icon {
+		display: block;
 		min-height: 282px;
 		min-width: 320px;
-		background-color: bisque;
+		margin: 0 auto;
 	}
 	
-	&__icon:not(:nth-of-type(2)) {
+	.price__icon:not(:nth-of-type(2)) {
 		display: none;
+	}
+}
+
+@media screen and @tablet-width {
+	
+	.price > .slider__input {
+		display: none;
+	}
+	
+	.price {
+		
+		min-height: 220px;
+//		padding-top: 65px;
+		padding-bottom: 65px;
+		
+		.price__icon {
+			display: none;
+		}
 	}
 }

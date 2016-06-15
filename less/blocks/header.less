@@ -1,14 +1,16 @@
 .header {
 
-//	.container();
-	
+	.container-fluid();
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	position: relative;
 	min-width: 320px;
-	min-height: 67px;
+//	min-height: 67px;
 	background-color: rgba(178, 178, 178, 0.3);
 	
 	h1 {
-		display: inline-block;
-		line-height: 29px;
+		
 	}
 	
 	.header__panel {
@@ -17,14 +19,55 @@
 }
 
 .header__panel::after {
-	content: url(/img/icon-menu-burger.svg);
-	
+	content: url(/img/icon-menu-burger.svg);	
+	position: absolute;
+	right: 20px;
+	top: 21px;
+	cursor: pointer;
 }
-
 
 @media screen and @tablet-width {
 	
 	.header {
-		background-color: red;
+		
+				
+		.header__panel {
+			padding: 40px;
+			
+			h1 {
+				margin: 0;				
+			}
+			
+			a {
+				text-decoration: none;
+			}
+		}
+	}
+	
+	.header__panel::after {
+	right: 40px;
+	top: 40px;
+}
+	
+}
+
+@media screen and @desktop-width {
+	
+	.header {
+		
+		display: flex;
+
+		.header__panel::after {
+			display: none;
+		}
+		
+		.header__panel {
+			padding: 40px 125px;
+		}
+		
+		h1 {
+
+			margin-left: 130px;
+		}
 	}
 }

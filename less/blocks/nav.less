@@ -7,12 +7,37 @@
 	li {
 		text-align: center;	
 		padding: 20px 0;
+		background-color: #283645;
 	}
 	
 	a {
 		text-decoration: none;
 		text-transform: uppercase;
-		color: ;
+		color: #ffffff;
 		font-family: ;
+	}
+}
+
+
+@media screen and @tablet-width {
+	.nav {
+		display: none;
+	}
+}
+
+@media screen and @desktop-width {
+	
+	.nav {
+		display:block;
+		float: right;
+		margin-right: 130px;
+		
+		&__item {
+			display: inline-block;
+		}
+		
+		&__item:not(:last-of-type) {
+			margin-right: 80px;
+		}
 	}
 }

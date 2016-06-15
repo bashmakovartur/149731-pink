@@ -22,7 +22,7 @@
 		<main class="page-main">
 			<h2 class="page-main__title">Взгляните на жизнь иначе!</h2>
 			<section class="app">
-					<a class="app__link  btn" href="https://play.google.com">Скачать приложение</a>
+				<a class="app__link  btn" href="https://play.google.com">Скачать приложение</a>
 				<a class="app__logo" href="https://itunes.apple.com"><img class="app__logo--apple" src="/img/logo-apple.svg">
 				</a>
 				<a class="app__logo" href="https://play.google.com"><img class="app__logo--android" src="/img/logo-android.svg">
@@ -33,26 +33,48 @@
 			<section class="promo">
 				<h2>Устали от серости мегаполиса?</h2>
 				<h2>Нам есть, что вам предложить!</h2>
-				<h3 class="promo__title">Поднимает настроение</h3>
-				<p class="promo__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-				<h3 class="promo__title">Меняет мир вокруг</h3>
-				<p class="promo__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-				<h3 class="promo__title">Заводит новых друзей</h3>
-				<p class="promo__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-				<img class="promo__logo" src="/img/iphone-screen-mobile@1x.png" alt=":) Всем привет!">
+				<div class="promo__item">
+					<h3 class="promo__item-title">Поднимает настроение</h3>
+					<p class="promo__item-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+					</p>
+					<img class="promo__item-logo  promo__item-logo--hidden" src="/img/nastr.png" alt=":) Всем привет!">
+				</div>
+				<div class="promo__item">
+					<h3 class="promo__item-title">Меняет мир вокруг</h3>
+					<p class="promo__item-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+					</p>
+					<img class="promo__item-logo  promo__item-logo--hidden" src="/img/world.png" alt=":) Всем привет!">
+				</div>
+				<div class="promo__item">
+					<h3 class="promo__item-title">Заводит новых друзей</h3>
+					<p class="promo__item-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+					</p>
+					<img class="promo__item-logo" src="/img/iphone-screen-mobile@1x.png" alt=":) Всем привет!">
+				</div>
+			</section>
+			<section class="effect">
+				<img class="effect__logo" src="/img/timer.png" alt="24 hourse">
+				<div class="effect__annotation">
+					<h3>Эффект на 24 часа!</h3>
+					<p>Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+					<a href="#more.html">Узнать боьлше об исследовании</a>
+				</div>
 			</section>
 			<section class="opinion  slider">
 				<ul class="opinion__list">
 					<li class="opinion__item">
 						<h3 class="opinion__item-title">Николай Петров</h3>
+						<span class="opinion__item-signature">25 лет, водитель трамвая</span>
 						<p class="opinion__item-text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
 					</li>
 					<li class="opinion__item">
 						<h3 class="opinion__item-title">...</h3>
+						<span class="opinion__item-signature">...</span>
 						<p class="opinion__item-text">&laquo;...&raquo;</p>
 					</li>
 					<li class="opinion__item">
 						<h3 class="opinion__item-title">...</h3>
+						<span class="opinion__item-signature">...</span>
 						<p class="opinion__item-text">&laquo;...&raquo;</p>
 					</li>
 			  </ul>
@@ -82,12 +104,36 @@
 		<footer class="page-footer">
 			<h3 class="page-footer__title">Остались вопросы?</h3>
 			<h3 class="page-footer__title">Свяжитесь с нами!</h3>
-			<span class="page-footer__phone">Звоните:</span>
-			<a href="tel:+78125556666">+7 (812) 555-66-66</a>
-			<span class="page-footer__mail">Пишите:</span>
-			<a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-			<span class="page-footer__adres">Приезжайте в гости:</span>
-			<a href="maps:ll=59.938631, 30.323055">ул. Большая Конюшенная, 19/8</a>
+			<div class="page-footer__phone">
+				<span>Звоните:</span>
+				<a href="tel:+78125556666">+7 (812) 555-66-66</a>
+			</div>
+			<div class="page-footer__mail">
+				<span>Пишите:</span>
+				<a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+			</div>
+			<div class="page-footer__adres">
+				<span>Приезжайте в гости:</span>
+				<a href="maps:ll=59.938631, 30.323055">ул. Большая Конюшенная, 19/8</a>
+			</div>
+			<div class="page-footer--not-all">
+				<a class="page-footer__link" href="index.html"><img class="page-footer__link-icon" src="/img/logo-pink-blue-mobile.svg" alt="Pink"></a>
+				<ul class="social-list">
+					<li class="social-list__item">
+						<a class="social-list__link" href="Twitter.com"><img src="/img/icon-twitter.svg" alt="Twitter.com"></a>
+					</li>
+					<li class="social-list__item">
+						<a class="social-list__link" href="Facebook.com"><img src="/img/icon-facebook.svg" alt="Facebook.com"></a>
+					</li>
+					<li class="social-list__item">
+						<a class="social-list__link" href="youtube.com"><img src="/img/icon-youtube.svg" alt="youtube.com"></a>
+					</li>
+				</ul>
+				<div class="page-footer__basement">
+					<span>Разработано</span>
+					<a href="htmlacadem.ru"><img src="/img/logo-htmlacademy.svg" alt="HTML Academy"></a>
+				</div>
+			</div>
 		</footer>
 	</body>
 </html>
