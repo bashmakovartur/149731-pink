@@ -1,0 +1,33 @@
+.price {
+	text-align: center;
+	background-color: cadetblue;
+	
+	.price__icon {
+		display: block;
+		min-height: 282px;
+		min-width: 320px;
+		margin: 0 auto;
+	}
+	
+	.price__icon:not(:nth-of-type(2)) {
+		display: none;
+	}
+}
+
+@media screen and @tablet-width {
+	
+	.price > .slider__input {
+		display: none;
+	}
+	
+	.price {
+		
+		min-height: 220px;
+//		padding-top: 65px;
+		padding-bottom: 65px;
+		
+		.price__icon {
+			display: none;
+		}
+	}
+}
