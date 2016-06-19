@@ -1,3 +1,121 @@
 .posts {
-	text-align: left;
+	background-color: #ffffff;
+	padding: 0 20px;
+	
+	.posts__title {
+		font-family: "Open Sans", "Arial", sans-serif;
+		font-size: 14px;
+		line-height: 30px;
+		color: #283645;
+		width: 275px;
+		text-align: center;
+		margin: 55px auto 60px;
+	}
+	
+	.posts__title:last-of-type {
+		
+		margin: 46px auto 48px;
+	}
+	
+	.posts__item {
+		background-color: #f2f2f2;
+		margin-bottom: 18px;
+		
+		.posts__item-photo {
+			width: 100%;
+			height: 180px;
+		}
+		
+		.posts__item-user {
+			display: inline-block;
+			font-family: "Open Sans", "Arial", sans-serif;
+			font-size: 14px;
+			line-height: 24px;
+			color: #283645;	
+			margin: 20px 0 6px 17px; 
+		}
+		
+		span {
+			font-family: "Open Sans", "Arial", sans-serif;
+			font-weight: lighter;
+			font-size: 12px;
+			line-height: 24px;
+			color: #283645;
+			text-transform: uppercase;
+		}
+		
+		.posts__item-comment {
+			font-family: "Open Sans", "Arial", sans-serif;
+			font-size: 14px;
+			line-height: 24px;
+			color: #283645;
+			margin: 0 17px 0 17px;
+		}
+		
+		.posts__item-like {
+			margin: 0 17px 0 17px;
+			
+			img {
+				display: inline-block;
+				margin-right: 17px;
+			}
+			
+			p {
+				display: inline-block;
+				font-family: "Open Sans", "Arial", sans-serif;
+				font-size: 12px;
+				line-height: 24px;
+				color: #d22856;
+				text-transform: uppercase;
+				
+				span {
+					font-family: "Open Sans", "Arial", sans-serif;
+					font-size: 12px;
+					line-height: 24px;
+					color: #d22856;
+					text-transform: uppercase;
+				}
+			}
+			
+		}
+		
+	}
+	
+}
+
+@media screen and @tablet-width {
+	
+	.posts {
+		
+		display: flex;
+//		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		padding: 0 40px;
+		
+		.posts__title {
+			font-size: 18px;
+			width: 500px;
+			margin: 95px auto 80px;
+		}
+		
+		.posts__title:last-of-type {
+		margin: 70px auto 70px;
+	}
+		
+		.posts__item {
+			display: flex;
+			flex-wrap: wrap;	
+			min-width: 48%;
+		}
+		
+		.posts__item:not(:first-of-type) {
+			width: 298px;
+		}
+		
+		.posts__item-photo--bests {
+				min-height: 510px;
+			}
+		
+	}
 }

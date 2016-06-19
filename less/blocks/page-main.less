@@ -1,6 +1,6 @@
 .page-main {
 	
-	.container-fluid();
+
 	
 	display: flex;
 	flex-direction: column;
@@ -30,10 +30,22 @@
 	font-size: 24px;
 }
 
+.page-main__title-photo {
+	width: 235px;
+	text-align: center;
+	padding: 35px 0 85px;
+	margin: 0 auto;
+	font-family: "Open Sans", Arial, sans-serif;
+	font-weight: lighter;
+	font-size: 24px;
+	color: #ffffff;
+}
+
     
 @media screen and @tablet-width {
 	
 	.page-main {
+
 		
 		.page-main__title {
 			
@@ -57,6 +69,16 @@
 			font-size: 50px;
 		}
 		
+		.page-main__title-photo {
+			width: 475px;
+			text-align: center;
+			padding: 80px 0 150px;
+			margin: 0 auto;
+			font-family: "Open Sans", Arial, sans-serif;
+			font-weight: lighter;
+			font-size: 50px;
+		}
+		
 	}
 	
 }
@@ -64,6 +86,8 @@
 @media screen and @desktop-width {
 	
 	.page-main {
+		
+			.container-fluid();
 		
 		&__title {
 			font-family: "Open Sans", "Arial";
