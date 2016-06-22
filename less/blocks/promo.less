@@ -115,13 +115,52 @@
 	
 	.promo {
 		
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+//		padding: 50px 130
+		
 		h2 {
 			font-size: 50px;
+//			width: 100%;
 		}
 		
 		h2:last-of-type {
 			width: 450px;
+			margin: 0 300px;
 		}
+		
+		
+		.promo__item {
+			display: flex;
+			flex-direction: column;
+			width: 260px;
+			text-align: center;
+			
+			.promo__item-title {
+				order: 2;
+			}
+			
+			.promo__item-text {
+				order: 3;
+			}
+			
+			.promo__item-logo {
+				position: static;
+				order: 1;
+			}
+			
+			.promo__item-logo--hidden {
+				display: block;
+			}
+			
+		}
+		
+		.promo__item:first-of-type .promo__item-title {
+				margin-top: 0;
+		
+			}
+		
 	}
 }
 

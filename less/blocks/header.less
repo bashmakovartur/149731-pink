@@ -1,6 +1,6 @@
 .header {
 
-	.container-fluid();
+//	.container-fluid();
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -54,24 +54,25 @@
 	
 	.header {
 		
-		width: 100%;
-		.container-fluid();
-		
-	
+		width: 100%; 
+		.container-fluid{
+			.container-fluid();
+		}
 		
 		display: flex;
+		flex-direction: row;
 
 		.header__panel::after {
 			display: none;
 		}
 		
 		.header__panel {
-			padding: 40px 125px;
+			display: inline-block;
+			padding: 40px 130px;
 		}
 		
 		h1 {
-
-			margin-left: 130px;
+			width: 230px;
 		}
 	}
 }
