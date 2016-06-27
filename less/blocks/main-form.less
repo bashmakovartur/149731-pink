@@ -103,6 +103,10 @@
 			color: #283645;
 		}
 		
+		.main-form__app--legend {
+//			display: none;
+		}
+		
 	}
 	
 	.main-form__report {
@@ -165,15 +169,185 @@
 	
 	.main-form {
 		
+		display: flex;
+		flex-direction: column;
+		
 		.main-form__title {
 			margin: 95px auto 60px;
 			font-size: 18px;
 			width: 550px;
 			text-align: center;
+			order: 1;
 			
 			&--hidden {
-				display: block;
+				display: inline-block;
 			}
+		}
+		
+		.main-form__name {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			align-items: baseline;
+			order: 2;
+			padding: 0 40px;
+			
+			input {
+				width: 75%;
+				margin-bottom: 50px;
+			}
+			
+			label {
+				margin-right: 20px;
+			}
+			
+			input:nth-of-type(2) {
+				width: 80.5%;
+			}
+			
+		}
+		
+		.main-form__records {
+			order: 5;
+			padding: 0 40px;
+		}
+		
+		.main-form__name--tablet {
+			padding: 0 40px;
+			order: 4;
+		}
+		
+		.main-form__app {
+			padding: 40px;
+			order: 3;
+			
+			.main-form__app-title--tablet {
+				display: none;
+			}
+			
+		}
+		
+		.main-form__report {
+			padding: 55px 40px 40px;
+			order: 6;
+		}
+		
+		.main-form__sent {
+			order: 7;
+			display: flex;
+			align-items: baseline;
+			justify-content: space-between;
+			padding: 23px 40px 80px;
+		}
+		
+		.main-form__button {
+			width: 45%;
+			margin: 0;
+		}
+		
+		.main-form__mark {
+			margin: 0;
+		}
+		
+	}
+	
+}
+
+
+@media screen and @tablet-width {
+	
+	.main-form {
+		flex-direction: row;
+		flex-wrap: wrap;
+		
+		.main-form__title {
+			width: 790px;
+		}
+		
+		.main-form__name {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			padding: 0;
+			margin: 0 0 0 130px;
+			width: 440px;
+			
+			input {
+				width: 50%;
+				margin-bottom: 50px;
+			}
+			
+			label {
+				margin: 0 20px 0 0;
+			}
+			
+			input:nth-of-type(2) {
+				width: 342px;
+			}
+		}
+		
+		.main-form__name--tablet {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			width: 100%;
+			margin: 40px 130px;
+			padding: 0 55px;
+			
+			input {
+				width: 337px;
+				margin-bottom: 50px;
+			}
+			
+			label {
+				margin: 0 20px 0 0;
+			}
+			
+			label:nth-of-type(1) {
+				order: 3;
+			}
+			
+			label:nth-of-type(2) {
+				order: 4;
+			}
+			
+			input:nth-of-type(1) {
+				order: 1;
+			}
+			
+			input:nth-of-type(2) {
+				width: 342px;
+				order: 2;
+			}
+			
+		}
+		
+		.main-form__records {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			align-items: center;
+			margin: 40px 130px;
+			width: 100%;
+			padding: 55px;
+			
+			.main-form__records-title {
+				width: 100%;
+			}
+		}
+		
+		.main-form__report {
+			width: 100%;
+			margin: 0	130px;
+			padding: 55px;
+		}
+		
+		.main-form__sent {
+			margin: 0 130px;
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
 		}
 		
 	}

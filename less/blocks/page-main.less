@@ -1,6 +1,6 @@
 .page-main {
 	
-	.container-fluid();
+//.container-fluid();
 	
 	display: flex;
 	flex-direction: column;
@@ -30,10 +30,22 @@
 	font-size: 24px;
 }
 
+.page-main__title-photo {
+	width: 235px;
+	text-align: center;
+	padding: 35px 0 85px;
+	margin: 0 auto;
+	font-family: "Open Sans", Arial, sans-serif;
+	font-weight: lighter;
+	font-size: 24px;
+	color: #ffffff;
+}
+
     
 @media screen and @tablet-width {
 	
 	.page-main {
+
 		
 		.page-main__title {
 			
@@ -57,6 +69,16 @@
 			font-size: 50px;
 		}
 		
+		.page-main__title-photo {
+			width: 475px;
+			text-align: center;
+			padding: 80px 0 150px;
+			margin: 0 auto;
+			font-family: "Open Sans", Arial, sans-serif;
+			font-weight: lighter;
+			font-size: 50px;
+		}
+		
 	}
 	
 }
@@ -65,12 +87,24 @@
 	
 	.page-main {
 		
-		&__title {
+		width: 100%;
+		
+		.container-fluid {
+			.container-fluid();
+		}
+	
+		.page-main__title {
 			font-family: "Open Sans", "Arial";
 			font-weight: lighter;
 			font-size: 50px;
-			width: 240px;
-			margin: 117px 0 0 162px;
+			width: 280px;
+			margin: 117px 0 0 143px;
 		}
+		
+		.page-main__title-form {
+			width: 770px;
+			margin: 70px auto 100px;
+		}
+		
 	}
 }
